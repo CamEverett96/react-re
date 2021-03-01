@@ -1,0 +1,326 @@
+#content-area{
+  overflow: auto;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#filter{
+  background: $off-white;
+  width: 30%;
+  max-width: 300px;
+  display: inline-block;
+  float: left;
+
+  .inside{
+    padding: 15px;
+    max-width: 300px;
+  }
+
+  h4{
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .9rem;
+  }
+
+  select{
+    background: transparent;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #1b1b1b;
+    display: block;
+    margin-bottom: 22px;
+    width: 100%;
+    }
+
+  .filters{
+
+    .title{
+      font-size: 0.9rem;
+      display: block;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      border-radius:5px ;
+      color: $darkgrey;
+      text-transform: uppercase;
+
+    }
+    input[type="text"]{
+      display: inline-block;
+      width: 45%;
+      margin-right: 2.5%;
+    }
+
+    &.extras{
+        font-size: 0.8rem;
+      label{
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+
+      input[type="checkbox"]{
+          float: right;
+        }
+      }
+    }
+  }
+}
+#listings{
+width: 70%;
+float: left;
+display: inline-block;
+
+
+.search-area{
+  input[type="text"]{
+    width: 70%;
+    background: transparent;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 1.2px solid $darkgrey;
+    margin-bottom: 15px;
+    font-weight: 100;
+  }
+}
+.sortby-area{
+  margin-bottom: 28px;
+
+  .results{
+    font-size: .8rem;
+    color: $darkgrey;
+    display: inline-block;
+      }
+
+.sort-options{
+    float: right;
+
+    select{
+      font-size: .9rem;
+      font-weight: 300;
+      border: 1px solid $lightgrey;
+      background: transparent;
+      padding: 8px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .view{
+      display: inline-block;
+      margin-right: 15px;
+
+      .fas{
+
+        font-size: 0.5rem;
+
+   }
+  }
+ }
+}
+
+ .listings-results{
+   margin-bottom: 50px;
+
+   .listing{
+     background: #white;
+
+     border-radius: 5px;
+     -webkit-box-shadow: 0px 7px 18px 0px rgba(50, 50, 50, 0.33);
+     -moz-box-shadow:    0px 7px 18px 0px rgba(50, 50, 50, 0.33);
+     box-shadow:         0px 7px 18px 0px rgba(50, 50, 50, 0.33);
+    }
+
+    .listing-img{
+      color: white;
+      position: relative;
+      padding: 15px;
+      background: url(https://photos.zillowstatic.com/fp/ffd76c63ee515069e7f6e34ff74ea225-p_e.jpg) no-repeat center center;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ min-height: 255px;
+ -webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+
+
+&:hover{
+  .details{
+    opacity: 1;
+  }
+  .address{
+    opacity: 0;
+  }
+}
+
+.address{
+  position: absolute;
+  bottom: 20px;
+  opacity: 1;
+  transition: all 0.45s ease-in-out;
+  text-shadow: 0px 2px 9px rgba(150, 150, 150, 1);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+  .details{
+    transition: all 0.45s ease-in-out;
+    opacity:0;
+    position: absolute;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(124,50,.5); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(124,50,252,.5) 13%, rgba(131,49,247,.5) 27%, rgba(131,49,247,.5) 27%, rgba(131,49,247,.5) 33%, rgba(213,137,255,.5) 84%, rgba(213,137,255,.5) 99%, rgba(213,137,255,.3) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(124,50,252,.5) 13%,rgba(131,49,247,.5) 27%,rgba(131,49,247,.5) 27%,rgba(131,49,247,.5) 33%,rgba(213,137,255,.5) 84%,rgba(213,137,255,.5) 99%,rgba(213,137,255,.3) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(124,50,252,.5) 13%,rgba(131,49,247,.3) 27%,rgba(131,49,247,.5) 27%,rgba(131,49,247,.5) 33%,rgba(213,137,255,.5) 84%,rgba(213,137,255,.5) 99%,rgba(213,137,255,.5) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+////border-radius///
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+min-height: 255px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+
+.user-img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  background: url(https://photos.zillowstatic.com/fp/ffd76c63ee515069e7f6e34ff74ea225-p_e.jpg) no-repeat center center;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+margin-right: -15px;
+
+
+}
+
+.user-details{
+  display: inline-block;
+  vertical-align: top;
+
+  .user-name{
+  color: rgba(265, 265, 265, 1);
+  display:block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  width: 70%;
+
+  margin-top: 3px;
+  margin-bottom: 5px;
+  }
+
+  .post-date{
+    color: rgba(265, 265, 265, .7);
+    display: block;
+    font-size: 0.5rem;
+  }
+}
+    .listings-details{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      .fas{
+        display: inline-block;
+        font-size: 20px;
+        margin-right: 15px;
+      }
+      span{
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 300;
+
+      vertical-align: top;
+      position: relative;
+      top: 3px;
+   }
+   .floor-space{
+     margin-bottom: 15px;
+     margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .bottom-info{
+        padding: 15px;
+
+      .price {
+        font-size: 1 rem;
+        display: block;
+        margin-bottom: 10px;
+        color: $darkgrey;
+      }
+       .location {
+         font-size: 1.2 rem;
+         display: block;
+         color: $lightgrey;
+       }
+      }
+    }
+  }
+ .view-btn{
+   background: black;
+   padding: 8px;
+   font-size: .7rem;
+   border-radius: 10px;
+   text-align: center;
+   transition: background 0.45s ease-in-out;
+   max-width: 150px;
+   &:hover {
+     background: $pink;
+     cursor: pointer;
+   }
+
+ }
+
+#pagination{
+  text-align: center;
+  .pages{
+    background: white;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+
+    -webkit-box-shadow: 0px 7px 18px 0px rgba(50, 50, 50, 0.33);
+    -moz-box-shadow:    0px 7px 18px 0px rgba(50, 50, 50, 0.33);
+    box-shadow:         0px 7px 18px 0px rgba(50, 50, 50, 0.33);
+
+    li {
+      padding: 5px 19px;
+      display: inline-block;
+      &:hover,
+      &.active{
+        background: $pink;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+
+    }
+  }
+}
+
+ .col-md-3{
+   width: 25%;
+   display:inline-block;
+   vertical-align: top;
+   padding: 0 15px;
+ }
+
+ .col-md-9{
+  width: 75%;
+  display: inline-block;
+ }
