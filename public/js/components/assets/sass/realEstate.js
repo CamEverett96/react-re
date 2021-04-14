@@ -852,7 +852,7 @@ var listingsData = [
     floorSpace: 1430,
     extras: ["elevator", "gym"],
     homeType: "Condo",
-    image: '../img/miamicondo.jpg'
+    image: '../img/condo3.jpg'
 }, {
     address: "1 president plaza",
     city: "Richmond",
@@ -892,7 +892,7 @@ var listingsData = [
     floorSpace: 2000,
     extras: ["elevator", "pool"],
     homeType: "Multi Home",
-    image: "../img/condo3.jpg"
+    image: "https://www.thehouseplanshop.com/userfiles/photos/large/15569175745499e3e99364f.jpg"
 }, {
     address: "730 gates ave",
     city: "Springfield",
@@ -944,6 +944,8 @@ var _listingsData2 = _interopRequireDefault(_listingsData);
 var _Modal = __webpack_require__(233);
 
 var _Modal2 = _interopRequireDefault(_Modal);
+
+__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../sass/main.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
