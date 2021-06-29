@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-
-// import "../sass/main.scss";
+ //import "../sass/main.scss";
 
 export default class Listings extends Component {
     constructor() {
@@ -16,7 +15,7 @@ export default class Listings extends Component {
 
     loopListings() {
         // var data = this.props.listingsData;
-        // You can also do the above like it is done below by using deconstruction.
+        
         var {listingsData} = this.props;
 
         // This is in case we put in a crazy number that gives us zero listings.  If this happens, we are basically telling the user that his or her filtering didn't return any results.
@@ -26,7 +25,7 @@ export default class Listings extends Component {
 
         return listingsData.map((listing, index) => {
             // This if-else statement will show either a box view or a long view, depending on the globalState.
-            // We could have put these two views into separate files, but this project is so short that this does not make much sense.
+        
             // This is the Box View.
             if (this.props.globalState.view == "box") {
                 return (
@@ -123,20 +122,7 @@ export default class Listings extends Component {
         });
     }
 
-    // Moved to realEstate.js file.
-    // viewModal(listingIndex) {
-    //     this.setState({
-    //         modalData: listingIndex
-    //     }, () => {
-    //         console.log(this.state.modalData);
-    //     });
 
-        // return (
-        //     <div className="modal-box">
-                
-        //     </div>
-        // );
-    // }
 
     render() {
         return(

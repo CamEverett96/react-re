@@ -1,7 +1,7 @@
 header {
   background: #0C002B;
   color: white;
-  // You have to use overflow: auto; for now because if you don't, you will not be able to see the header element's background after using float: right; for the nav element.
+  // You have to use overflow: auto; you will not be able to see the header element's background after using float: right; for the nav element.
   overflow: auto;
   padding: 20px 15px;
 

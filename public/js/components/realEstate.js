@@ -366,7 +366,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// import "../sass/main.scss";
+//import "../sass/main.scss";
 
 var Listings = function (_Component) {
     _inherits(Listings, _Component);
@@ -392,7 +392,7 @@ var Listings = function (_Component) {
             var _this2 = this;
 
             // var data = this.props.listingsData;
-            // You can also do the above like it is done below by using deconstruction.
+
             var listingsData = this.props.listingsData;
 
             // This is in case we put in a crazy number that gives us zero listings.  If this happens, we are basically telling the user that his or her filtering didn't return any results.
@@ -403,7 +403,7 @@ var Listings = function (_Component) {
 
             return listingsData.map(function (listing, index) {
                 // This if-else statement will show either a box view or a long view, depending on the globalState.
-                // We could have put these two views into separate files, but this project is so short that this does not make much sense.
+
                 // This is the Box View.
                 if (_this2.props.globalState.view == "box") {
                     return _react2.default.createElement(
@@ -606,22 +606,6 @@ var Listings = function (_Component) {
                     }
             });
         }
-
-        // Moved to realEstate.js file.
-        // viewModal(listingIndex) {
-        //     this.setState({
-        //         modalData: listingIndex
-        //     }, () => {
-        //         console.log(this.state.modalData);
-        //     });
-
-        // return (
-        //     <div className="modal-box">
-
-        //     </div>
-        // );
-        // }
-
     }, {
         key: "render",
         value: function render() {
