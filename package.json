@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "joe santos garcia",
   "license": "MIT",
-  "homepage": "http://rocky.codingphase.com/",
+  "homepage": "http://CamEverett96.github.io/react-re",
   "dependencies": {
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
@@ -42,6 +42,8 @@
     "bundle": "./node_modules/.bin/webpack",
     "production": "./node_modules/.bin//webpack -p",
     "watch": "gulp",
+    "predeploy": "npm run build",
+    "deploy" : "gh-pages -d build",
     "sass": "gulp styles",
     "js": "gulp webpack"
   },
